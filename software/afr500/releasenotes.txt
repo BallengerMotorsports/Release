@@ -1,12 +1,70 @@
+************************************************************************************************************************
+Version:
+    0.3.0.0
+
+Date:
+    2024 Feb 25
+
+Notes:
+    + Downgrading device firmware from version v2.4.0.0 or higher to version earlier than v2.4.0.0 will be not allowed
+      by the software because that would permanently remove some important information stored in the device.
+
+Changes:
+    + Display hardware version and bootloader version in Device Information screen for AFR devices running firmware
+      v2.4.0.0 or higher.
+    + Backup and restore device settings on updating firmware. This is to workaround a limitation of AFR device:
+      updating firmware would make all device settings reset to default values. The backup/restore however does not
+      support updating firmware from a legacy firmware.
+    + Admin user now can view and change hardware version and Bootloader version in Device Setup screen.
+
+
+************************************************************************************************************************
+Version:
+    0.2.1.0
+
+Date:
+    2024 Feb 15
+
+Fixes:
+    + Wrong Personal Access Token (PAT) was used for software update. That caused the update to fail.
+    + The software uninstaller was not signed. That caused a warning User Account Control message while uninstalling
+      the software.
+    + Increased the timeout waiting for responses reading lambda and error code. This is for slow computer with high
+      CPU utilization.
+
+
+************************************************************************************************************************
+Version:
+    0.2.0.1
+
+Date:
+    2024 Feb 12
+
+Notes:
+    + This software supports the following firmware: AFR25 v2.3.0.0 or higher, AFR30 v2.3.0.0 or higher.
+
+Changes:
+    First release of AFR Device Manager with the following main features:
+    + Supported AFR devices: AFR500v2CAN (both SAMC21E16A and SAMC21E18A variants) and AFR500v3CAN
+    + Device Information
+    + Device Setup
+    + Firmware Update
+    + Device Enumeration
+    + OTA software update
+    + OTA firmware update. Legacy AFR firmware (old serial protocol) can also be seamlessly upgraded to the
+      latest version.
+    + Monitoring: display instantaneous AFR in lambda unit and device error code (AFR500v3CAN only)
+
+Below is archival:
 Version		Date		Notes
-v0.40		2/28/2022	Stable Release
-v0.55		8/27/2022	Automatically determine COM Ports
-				Several minor fixes and improvements
-v0.56		8/27/2022	Autosearch "with Read/Verify"
-v0.57		12/6/2022	Added Rev2 board compatibility
-v0.59.1.0	7/28/2023	Added AFR500v3 board compatibility
-v0.59.1.1	7/31/2023	Updated installer automation
-v0.59.1.2	7/31/2023	Add AFR500v3 firmware
-v0.59.1.3	8/1/2023	Improvements based on static analysis tools
 v0.59.1.4	8/7/2023	Default to no termination resistor when using HP Tuners or EFI Live
 						Fix for EFI Live bug
+v0.59.1.3	8/1/2023	Improvements based on static analysis tools						
+v0.59.1.2	7/31/2023	Add AFR500v3 firmware
+v0.59.1.1	7/31/2023	Updated installer automation
+v0.59.1.0	7/28/2023	Added AFR500v3 board compatibility
+v0.57		12/6/2022	Added Rev2 board compatibility
+v0.56		8/27/2022	Autosearch "with Read/Verify"
+v0.55		8/27/2022	Automatically determine COM Ports
+				Several minor fixes and improvements
+v0.40		2/28/2022	Stable Release
