@@ -1,5 +1,24 @@
 ************************************************************************************************************************
 Version:
+    1.1.0.x
+
+Date:
+    2026 Jun 18
+
+Fixes:
+    + Changing interface type of AFR600 didn't change default value of relevant settings.
+    + Manual selecting firmware for AFR600 didn't work.
+    + Bug in parsing status byte of firmware update operations.
+
+Changes:
+    + Support the communication with AFR600 devices over CAN interface (PCan-USB).
+    + Added settings for the two oxygen sensors of AFR600CAN
+    + Added PCAN-USB driver v5.1.1 to the installer. Installing the software will also install that driver.
+    + Added "Perform free air calibration" button for AFR600 in Device Information screen.
+
+
+************************************************************************************************************************
+Version:
     1.0.0.x
 
 Date:
