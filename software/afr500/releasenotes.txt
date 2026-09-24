@@ -1,5 +1,16 @@
 ************************************************************************************************************************
 Version:
+    1.2.0.x
+
+Date:
+    2026 Jul 9
+
+Changes:
+    + Added Sensor Monitoring view to monitor AFR600 sensors in real-time.
+
+
+************************************************************************************************************************
+Version:
     1.1.0.x
 
 Date:
@@ -99,7 +110,6 @@ Notes:
     + This software supports the following firmware: AFR25 v2.3.0.0 or higher, AFR30 v2.3.0.0 or higher.
 
 Changes:
-    AFR Device Manager replaces AFRCAN Programmer. Uninstall AFRCAN Programmer before installing.
     First release of AFR Device Manager with the following main features:
     + Supported AFR devices: AFR500v2CAN (both SAMC21E16A and SAMC21E18A variants) and AFR500v3CAN
     + Device Information
